@@ -346,6 +346,10 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   harzard: {fileID: 162520, guid: 70c6d984b62494196b0c97f7a669d1f9, type: 2}
   spawnValues: {x: 6, y: 0, z: 16}
+  hazardCount: 10
+  spawnWait: .5
+  startWait: 1
+  waveWait: 4
 --- !u!4 &882182277
 Transform:
   m_ObjectHideFlags: 0
