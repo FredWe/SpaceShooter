@@ -26,11 +26,13 @@ public class PlayerController : MonoBehaviour {
 
     // Update is called once per frame
     void Update() {
-        if (/*Input.GetButton("Fire1") && */Time.time > nextFire)
+        if (Input.GetButton("Fire1") && Time.time > nextFire)
         {
             nextFire = Time.time + fireRate;
             //GameObject clone = 
             Instantiate(shot, shotSpawn.position, shotSpawn.rotation); // as GameObject;
+			AudioSource audio = GetComponent<AudioSource> ();
+			audio.Play ();
         }
         // Instantiate(shot, shotSpawn.position, shotSpawn.rotation);
            // If directly call Instiante() in Update(), it will create a flow of shot. Since on every frame, a shot created.
