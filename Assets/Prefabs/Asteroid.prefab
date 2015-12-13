@@ -80,7 +80,9 @@ MeshRenderer:
   m_ProbeAnchor: {fileID: 0}
   m_ScaleInLightmap: 1
   m_PreserveUVs: 0
+  m_IgnoreNormalsForChartDetection: 0
   m_ImportantGI: 0
+  m_MinimumChartSize: 4
   m_AutoUVMaxDistance: .5
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
@@ -145,8 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   explosion: {fileID: 100004, guid: 2857e183f4cd3df4e9096e5b578bd32f, type: 2}
   playerExplosion: {fileID: 100008, guid: a93496017806b7740910df5fd946f306, type: 2}
-  scoreValue: 0
-  gameController: {fileID: 0}
+  scoreValue: 10
 --- !u!136 &13657500
 CapsuleCollider:
   m_ObjectHideFlags: 1
@@ -172,6 +173,10 @@ Prefab:
       value: 
       objectReference: {fileID: 11480762, guid: 1c32518f447fe486fbd6890da2874e4f,
         type: 2}
+    - target: {fileID: 0}
+      propertyPath: scoreValue
+      value: 10
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 0}
   m_RootGameObject: {fileID: 162520}
